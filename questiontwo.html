@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question two</title>
+</head>
+<body>
+    <p><b>Question: Write a JavaScript for a loop that will iterate from n times. For each
+        iteration, it will check if the current number is odd, even or prime, and
+        display a message on the screen
+        a. "0 is even"
+        b. "1 is odd"
+        c. "2 is even and prime"
+        d. “3 is odd and prime”
+        e. “4 is even”
+        <br><br>
+
+        Answer:
+    </p></b>
+    <script>
+        const number = parseInt(prompt('Enter the number: '));
+        for(var i = 0; i <= number; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    document.write(i + " is even");
+                    document.write("<br>");
+                }
+                else if((i % 2 == 0) && (i % i == 0))
+                {
+                   document.write(i + " is even and prime");
+                   document.write("<br>");
+                }
+                else if((i % 2 != 0) && (i % i == 0))
+                {
+                   document.write(i + " is odd and prime");
+                   document.write("<br>");
+                }
+                else
+                {
+                    document.write(i + " is odd");
+                    document.write("<br>");
+                }
+            }           
+    </script> 
+</body>
+</html>

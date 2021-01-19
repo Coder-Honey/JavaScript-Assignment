@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question one</title>
+</head>
+<body>
+    <p><b>Question: Write a JavaScript conditional statement to sort three numbers. Display an
+        alert box to show the result.
+        a. Sample numbers : 0, -1, 4
+        b. Output : 4, 0, -1
+    </p></b>
+    <script>
+        var x,y,z;
+
+        if (x>y && x>z)
+        {
+            if (y>z)
+            {
+                console.log(x+","+y+","+z);
+            }
+            else
+            {
+                console.log(x+","+z+","+y);
+            }
+        }
+        else if (z>x && z>y)
+        {
+            if(x>y)
+            {
+                console.log(z+","+x+","+y);
+            }
+            else
+            {
+                console.log(z+","+y+","+x);
+            }
+        }
+    </script>
+    <script>
+        function abc(a,b,c)
+        {
+            var array = [a,b,c];
+            var sort = array.sort(function(a,b)
+            {
+                return b-a;
+            });
+            alert(sort);
+        }
+        abc(0,-1,4);
+    </script>
+</body>
+</html>

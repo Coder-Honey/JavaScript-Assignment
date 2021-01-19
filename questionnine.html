@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question nine</title>
+</head>
+<body>
+    <p><b>Question:  The Temperature Converter
+        Create a function called Celsius to Fahrenheit:
+        ● Store a Celsius temperature into a variable.
+        ● Convert it to Fahrenheit and output "NN°C is NN°F".
+        Create a function called Fahrenheit to celsius:
+        ● Now store a Fahrenheit temperature into a variable.
+        ● Convert it to celsius and output "NN°F is NN°C."
+        <br><br>
+
+        Answer:
+        </b></p>
+    <script>
+        document.write('Temperature Converter: ');
+        document.write("<br>");
+        function CtoF(celsius)
+        {
+            var ctemp = celsius;
+            var ctofar = ctemp * 9 / 5 + 32;
+            var message = ctemp + '°C  is ' + ctofar +'°F.';
+            document.write(message);
+            document.write("<br>");
+        }
+        function FtoC(fahrenheit)
+        {
+            var ftemp = fahrenheit;
+            var ftocel = (ftemp - 32) * 5 / 9;
+            var message = ftemp + '°F  is ' + ftocel +'°C';
+            document.write(message);
+        }
+        CtoF(60);
+        FtoC(45);
+    </script>    
+</body>
+</html>

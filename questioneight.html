@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question eight</title>
+</head>
+<body>
+    <p><b>Question: Write a javascript function to print the Fibonacci series of n times.
+    <br><br>
+
+    Answer:
+    </b></p>
+    <script>
+        const number = parseInt(prompt('Enter the number: '));
+        let n1 = 0, n2 = 1, nextTerm;
+
+        document.write('Fibonacci Series: ');
+        document.write("<br>");
+
+        for(let i = 0; i <= number; i++)
+        {
+            document.write(n1 + "<br>");
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+        }
+    </script>
+</body>
+</html>

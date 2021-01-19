@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question ten</title>
+</head>
+<body>
+    <p><b>Question: Write a JavaScript function that takes a string which has lower and upper
+        case letters as a parameter and converts upper case letters to lower case,
+        and lower case letters to upper case
+        <br><br>
+
+        Answer:
+    </b></p>
+    <script>
+        swapcase = function swapcase(str)
+        {
+            return str.replace(/([a-z]+)|([A-Z]+)/g, function(match, chr)
+            {
+                return chr ? match.toUpperCase() : match.toLowerCase();
+            });
+        }
+        document.write(swapcase('Hello from SkillSanta'));
+    </script>
+</body>
+</html>
